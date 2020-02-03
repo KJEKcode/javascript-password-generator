@@ -6,7 +6,7 @@ var generateBtn = document.querySelector("#generate");
 // Start generatePassword function
 function generatePassword() {
   // PROMPT the user to select how many characters they want thier password (between 8 and 128)
-  var passwordLength = prompt("Please select a length for you password between 8 and 128 characters");
+  var passwordLength = prompt("Please select a length for your password between 8 and 128 characters");
   // IF the password is >= 8 and <= 128 start to the generate password IF NOT alert the user of range and ask them to try again 
   if (passwordLength  >= 8 && passwordLength <= 128) {
     // CREATE an array for all uppercase letters
@@ -42,7 +42,7 @@ function generatePassword() {
       // PUSH numeric values to parent array
       parentArray.push(numericValue);
     }
-    // IF they would like to use numbers
+    // IF they would like to use special characters
     if (useSpecial) {
       // PUSH special charaters to parent array
       parentArray.push(specialCharacter);
